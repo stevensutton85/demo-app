@@ -43,10 +43,15 @@
 	</dependencies>
 
 	<build>
+		<finalName>demo-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.demo.DemoApplication</mainClass>
+					<additionalProperties>false</additionalProperties>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
